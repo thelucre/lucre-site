@@ -1,0 +1,26 @@
+-get_template_part('templates/custom-sidebar');
+
+
+div.portfolio-wrap
+    h1!=the_title()
+
+    div.portfolio-content!=the_content()
+
+    -if($value = get_field('vimeo_url')) :
+        iframe(src!="https://player.vimeo.com/video/<?php echo $value; ?>?&color=ffffff&byline=0&portrait=0" width="900" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+    -endif;
+
+    -if($value = get_field('flash_url')) :
+        object(type="application/x-shockwave-flash" id="fm_MirrorMen_1997309846" name="fm_MirrorMen_1997309846" class="aligncenter" data!="<?php echo $value; ?>" )
+    -endif;
+
+    -if($value = get_field('embed_url')) :
+        iframe.external(src!="<?php echo $value; ?>")
+    -endif;
+
+    //- loop through images 1 - 5 and dispaly them if they exist
+    -for($i = 1; $i<6; $i++):
+        -if($value = get_field('image_'.$i)) :
+            img(src!="<?php echo $value; ?>")
+        -endif;
+    -endfor;

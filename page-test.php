@@ -1,1 +1,0 @@
-<?php echo htmlspecialchars(the_title(), ENT_QUOTES, 'UTF-8'); ?><?php echo htmlspecialchars(the_content(), ENT_QUOTES, 'UTF-8'); ?><p>standard html</p>

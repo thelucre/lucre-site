@@ -1,0 +1,18 @@
+div.custom-sidebar
+  a(href!="<?= esc_url(home_url('/')); ?>")
+    img(src!="<?php bloginfo('stylesheet_directory'); ?>/img/logo.jpg")
+
+  //- Grab all portfolio titles 
+  -$args = array( 'post_type' => 'portfolio', 'posts_per_page' => -1 );
+  -$items = new WP_Query( $args );
+
+  div
+  -while( $items->have_posts() ) : $items->the_post();
+    -$randomclass = 'random-'.mt_rand(0,20);
+    //- ADD Sidebar shit here 
+    a(href!="<?php echo the_permalink();?>" class!="<?php echo $randomclass; ?>")!=the_title()
+
+  //- End of custom query loop
+  -endwhile;
+
+-wp_reset_query()

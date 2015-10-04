@@ -6,7 +6,7 @@
 
 // begin Sage 
 @import "common/_variables";
-@import "common/_global";
+
 @import "components/_buttons";
 @import "components/_comments";
 @import "components/_forms";
@@ -22,5 +22,9 @@
 // Custom
 @import "mixins";
 @import "variables";
+@import "common/_global";
 @import "typography";
 @import "header";
+
+@import "custom-sidebar";
+@import "portfolio";

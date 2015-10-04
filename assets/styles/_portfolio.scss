@@ -1,0 +1,22 @@
+.portfolio-wrap {
+	font-family: 'Courier New', serif;
+	margin-top: 145px;
+	margin-left: 280px;
+	text-align: right;
+
+	img, iframe, object {
+		width: 100%;
+	}
+
+	h1 {
+		letter-spacing: -5px;
+	}
+
+	.portfolio-content, img {
+		margin: 15px 0;
+	}
+
+	.external, object {
+		min-height: 590px;
+	}
+}
