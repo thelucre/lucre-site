@@ -1,0 +1,10 @@
+// Main Stylesheet
+@import 'mixins';
+@import 'variables';
+
+.test {
+  display: block;
+  height: 200px;
+  width: 200px;
+  background: white;
+}

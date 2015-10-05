@@ -1,0 +1,42 @@
+.expand-transition {
+  transition: all 3s ease;
+  height: 30px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.expand-enter, .expand-leave {
+  height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  opacity: 0;
+}
+
+.fader-transition {
+  transition: opacity .5s  ease;
+  opacity: 1;
+
+  a {
+    transition: opacity .7s 6.7s ease;
+    opacity: 0.8;
+  }
+}
+.fader-enter, .fader-leave {
+  transition: opacity .5s ease;
+  opacity: 0;
+
+  a {
+    transition: opacity .5s ease;
+    opacity: 0;
+  }
+}
+
+.about-transition {
+  transition: opacity .5s  ease;
+  opacity: 1;
+
+}
+.about-enter, .about-leave {
+  transition: opacity .5s ease;
+  opacity: 0;
+}

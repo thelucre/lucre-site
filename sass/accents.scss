@@ -1,0 +1,12 @@
+// accents
+@keyframes waiting {
+  0% {opacity: 0;}
+  10% { opacity: 1; }
+  60% { opacity: 1; }
+  100% {opacity: 0;}
+}
+
+.waiting {
+	//transform-origin: center center;
+	animation: waiting 1s linear infinite;
+}

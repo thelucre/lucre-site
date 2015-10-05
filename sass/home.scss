@@ -1,0 +1,35 @@
+body.home.page {
+  overflow: hidden;
+
+  .wrap.container {
+    width: 100%;
+    padding:0;
+    margin:0;
+  }
+
+  .menu {
+    position:fixed;
+    z-index:10;
+    font-size: 30px;
+    // opacity: 0.7;
+    font-family: 'Raleway';
+    font-weight: 400;
+    top: 78%;
+    width: 100%;
+    text-align: center;
+    padding-right:12px;
+
+    a {
+      margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      opacity: 0;
+      display: inline-block;
+      transition: color 350ms 0ms ease-in-out;
+
+      &:hover {
+        color: rgb(148, 133, 191);
+      }
+    }
+  }
+}

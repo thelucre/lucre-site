@@ -1,0 +1,60 @@
+.module.main {
+
+	.console {
+		height:410px;
+		background: #1a1a1a;
+		padding:10px;
+		width: 100%;
+		position:relative;
+		overflow: hidden;
+	}
+
+	// contains the console entries
+	.log {
+		position:absolute;
+		bottom: 10px;
+	}
+
+	p {
+		margin: 5px 0 0 0;
+		position:relative;
+		margin-left: 20px;
+
+		&:before {
+			content : '>';
+			position:absolute;
+			left:-15px;
+		}
+
+		&.heading {
+			color: darken(white,20%);
+			text-transform: uppercase;
+		}
+
+		&.info {
+			color: darken(white,30%);
+		}
+
+		&.warn {
+			color: darken(yellow,20%);
+			&:before {
+				content : '!';
+			}
+		}
+
+		&.look {
+			color: blue;
+		}
+
+		&.scan {
+			color: orange;
+		}
+	}
+
+	input {
+		border-top: 1px solid #333;
+		height:40px;
+		width: 100%;
+		padding:15px;
+	}
+}

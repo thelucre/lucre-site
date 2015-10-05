@@ -27,6 +27,7 @@
     "npm": ">=2.1.5"
   },
   "devDependencies": {
+    "webpack": "*",
     "asset-builder": "^1.0.2",
     "browser-sync": "^2.4.0",
     "del": "^1.1.1",
@@ -55,6 +56,13 @@
     "run-sequence": "^1.0.2",
     "traverse": "^0.6.6",
     "wiredep": "^2.2.2",
-    "yargs": "^3.6.0"
+    "yargs": "^3.6.0",
+    "style-loader": "^0.12.4",
+    "css-loader": "^0.16.0",
+    "html-loader": "^0.3.0",
+    "sass-loader": "2.0.*",
+    "coffee-loader": "^0.7.2",
+    "raw-loader": "0.5.1",
+    "expose-loader": "*"
   }
 }

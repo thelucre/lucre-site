@@ -1,0 +1,39 @@
+{
+  "name": "vue-router",
+  "homepage": "https://github.com/vuejs/vue-router",
+  "authors": [
+    "Evan You <yyx990803@gmail.com>"
+  ],
+  "description": "router for Vue.js",
+  "main": "dist/vue-router.js",
+  "moduleType": [
+    "globals",
+    "node",
+    "amd"
+  ],
+  "keywords": [
+    "vue",
+    "router"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "build",
+    "docs",
+    "example",
+    "src",
+    "test",
+    "*.yml",
+    "*.json"
+  ],
+  "version": "0.6.2",
+  "_release": "0.6.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.2",
+    "commit": "5be0f1a609569a42220fd9025a1e647734e805ad"
+  },
+  "_source": "git://github.com/vuejs/vue-router.git",
+  "_target": "0.*",
+  "_originalSource": "vue-router"
+}
