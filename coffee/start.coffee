@@ -10,4 +10,5 @@ HomePage = require './home/page.coffee'
 
 $(document).ready () ->
 
-  home = new HomePage({ el: '#app' });
+  if $('body').hasClass 'home'
+    home = new HomePage({ el: '#app' });

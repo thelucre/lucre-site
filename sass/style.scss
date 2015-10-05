@@ -1,10 +1,27 @@
 // Main Stylesheet
 @import 'mixins';
 @import 'variables';
+@import 'typography';
+
+* {
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+body {
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
 
 .test {
   display: block;
   height: 200px;
   width: 200px;
   background: white;
+}
+
+a {
+  color: white;
 }

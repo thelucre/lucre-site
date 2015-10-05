@@ -204,7 +204,8 @@ class Marquee
     _.each @letters, (letter) =>
       letter.update()
 
-    @polyfield.update @frame
+    if @polyfield?
+      @polyfield.update @frame
 
     # do the render
     @render()
