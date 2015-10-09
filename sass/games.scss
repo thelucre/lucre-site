@@ -16,7 +16,7 @@
   display: inline-block;
   width: calc(33.3333% - 4px);;
 
-  padding-bottom: 17%;
+  padding-bottom: 16%;
   margin-bottom: 80px;
 
   @media(min-width:$tablet-landscape + 1) {
@@ -29,13 +29,13 @@
   @media(max-width:$tablet-landscape) {
     width: calc(50% - 2px);
     margin: 0 1px 80px;
-    padding-bottom: 25%;
+    padding-bottom: 24%;
   }
 
   @media(max-width:$mobile-landscape) {
     width: 100%;
     margin: 0;
-    padding-bottom: 50%;
+    padding-bottom: 48%;
   }
 
   .game-image {
@@ -44,7 +44,6 @@
     left:0;
     right:0;
     bottom:0;
-    background: #909;
     background-size: cover;
     background-position: center center;
     transition:
