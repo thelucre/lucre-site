@@ -15,7 +15,7 @@ HomePage =
   initialize: (options) ->
     _.bindAll @
 
-    if Detector.webgl
+    if Detector.webgl and ($(window).outerWidth() > 768)
       $('.polyfield').remove();
       $('.home-mobile').remove();
 

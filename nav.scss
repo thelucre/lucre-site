@@ -1,0 +1,48 @@
+#nav {
+  max-width: 1200px;
+  margin: 30px auto 30px;
+  position:relative;
+
+  .logo {
+    img {
+      max-width:130px;
+    }
+  } // end logo
+
+  .menu {
+    position:absolute;
+    right: 0;
+    top: 30px;
+
+    li {
+      a {
+        margin-right: 40px;
+        text-transform:uppercase;
+        color: white;
+        line-height: 25px;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+        transition:
+          color 350ms 0ms ease-in-out,
+          border 350ms 0ms ease-in-out;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &.active {
+          border-bottom: 2px solid $blue;
+        }
+
+        &:hover {
+          color: white;
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  } // end menu
+
+  @media(max-width:$mobile-landscape) {
+    text-align: center;
+  } // end mobile-landscape styles
+}

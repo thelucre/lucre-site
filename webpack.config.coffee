@@ -1,6 +1,7 @@
 bower_dir = __dirname + '/js/vendor'
 
 webpack = require 'webpack'
+ExtractTextPlugin = require 'extract-text-webpack-plugin'
 
 module.exports =
 
@@ -25,11 +26,7 @@ module.exports =
     }
     {
       test: /\.scss$/
-      loaders: [
-        'style-loader'
-        'css?sourceMap'
-        'sass?sourceMap'
-      ]
+      loader: ExtractTextPlugin.extract 'style-loader', 'css?sourceMap!sass?sourceMap'
     }
     {
       test: /\.(png|woff|woff2|eot|ttf|svg)($|\?)/
@@ -62,10 +59,12 @@ module.exports =
       'velocity': bower_dir + '/velocity/velocity.min.js'
 
   plugins: [
+    new webpack.OldWatchingPlugin,
     new webpack.ProvidePlugin
       _: 'lodash'
       $: "jquery"
       jQuery: "jquery"
       "window.jQuery": "jquery"
-      "root.jQuery": "jquery"
+      "root.jQuery": "jquery",
+    new ExtractTextPlugin 'style.css', { allChunks: true }
   ]

@@ -3,8 +3,19 @@
 @import 'variables';
 @import 'typography';
 
+@import 'base';
+@import 'nav';
+@import 'footer';
+
+@import 'headings';
+
+// Pages
+@import 'about';
+@import 'games';
+
 * {
   text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  -webkit-font-smoothing: auto !important;
 }
 
 body {

@@ -4,7 +4,7 @@
 @import "../scripts/bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-// begin Sage 
+// begin Sage
 @import "common/_variables";
 
 @import "components/_buttons";
@@ -26,5 +26,4 @@
 @import "typography";
 @import "header";
 
-@import "custom-sidebar";
-@import "portfolio";
+@import "games/_layout";

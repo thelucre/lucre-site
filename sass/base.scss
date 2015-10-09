@@ -2,118 +2,36 @@
   box-sizing: border-box;
 }
 
-// hides uncompiled Vue handlebars
-[v-cloak] { display: none }
-
-input, select, textarea, button {
-  background:#3d3d3d;
-  border: none;
-  outline: none;
-  padding:8px;
-  color: #cccccc;
-  font-family: 'Courier New', serif;
-  font-size:14px;
-  transition: color 250ms 0ms ease-in-out, background-color 250ms 0ms ease-in-out;
-  border-radius: 0;
-  cursor: pointer;
-  &:hover {
-    background-color:lighten(#3d3d3d, 10%);
-  }
-}
-input {
-  margin-bottom: 3px;
-}
-select {
-  appearance: none;
-  background-image: url('/img/arrow.png');
-  background-repeat:no-repeat;
-  background-position: 96% 55%;
-  min-width:200px;
-}
-
-button {
-  color:#3d3d3d;
-  background: #cccccc;
-  &:hover {
-    background:darken(#cccccc, 15%);
-  }
-}
-
 body {
-  background: $bodybg;
-  color: $green;
-  font-family: 'Courier New', serif;
-  margin: 20px;
-  padding: 0;
+  padding: 0 80px;
+
+  @media(max-width:$tablet-landscape) {
+    padding: 0 40px;
+  }
+
+  @media(max-width:$mobile-landscape) {
+    padding: 0;
+  }
+
+  &.home {
+    padding: 0;
+  }
 }
 
-.clearfix {
-  @include clearfix;
+.main {
+  padding: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
 }
 
 a {
-  text-decoration: none;
-  color: $green;
+  text-decoration: none !important;
 }
 
-a.editor {
-  display: inline-block;
-  position: absolute;
-  top: 3px;
-  color: #999;
-  text-transform: uppercase;
-  font-size: 12px;
-  transition: color 250ms 0ms ease-in-out;
-
-  &:hover {
-    color: orange;
-  }
-}
-
-.module {
-  float: left;
-  border: 1px solid $borders;
-  height: 450px;
-  vertical-align: middle;
-  overflow: hidden;
-  background: $modulebg;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.module.main {
-  width: 49%;
-  margin-right: 2%;
-}
-
-.module.inventory {
-  width: 49%;
-  height: 150px;
-
-  .content { padding: 10px; }
-}
-
-.edit-room {
-  width: 50%;
-  float: left;
-  padding-left: 20px;
-}
-
-.module.map {
-  width: 49%;
-}
-
-.module.map .content {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 0;
-  white-space: nowrap;
-}
-
-#main {
-  max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
+.wrap.container {
+  width: 100%;
+  margin:0;
+  padding: 0;
 }

@@ -207,16 +207,16 @@ gulp.task('jshint', function() {
 
 // ### Jade Templates
 // be careful - these views will overwrite the defaults in the root
-gulp.task('jade', function() {
-  gulp.src('./assets/views/**/*.jade')
-    .pipe($.jade({ pretty : true }))
-    .on('error', function(err) {
-        console.error(err.message);
-        this.emit('end');
-    })
-    .pipe(gulp.dest('.'))
-    ;
-});
+// gulp.task('jade', function() {
+//   gulp.src('./assets/views/**/*.jade')
+//     .pipe($.jade({ pretty : true }))
+//     .on('error', function(err) {
+//         console.error(err.message);
+//         this.emit('end');
+//     })
+//     .pipe(gulp.dest('.'))
+//     ;
+// });
 
 // ### Clean
 // `gulp clean` - Deletes the build folder entirely.
@@ -236,7 +236,7 @@ gulp.task('watch', function() {
       blacklist: ['/wp-admin/**']
     }
   });
-  gulp.watch([path.source + 'views/**/*'], ['jade']);
+  // gulp.watch([path.source + 'views/**/*'], ['jade']);
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);

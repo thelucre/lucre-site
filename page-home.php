@@ -13,11 +13,11 @@
     </div>
   </div>
 
-  <div class="menu">
+  <!-- <div class="menu">
     <a v-link="games">GAMES</a>
     <a href="/about">ABOUT</a>
     <a href="/blog">BLOG</a>
-  </div>
+  </div> -->
 
   <div class="polyfield" data-image="<?php bloginfo('stylesheet_directory'); ?>/img/home-bg.png"></div>
 </div>

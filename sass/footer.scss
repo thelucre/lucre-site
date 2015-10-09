@@ -1,0 +1,30 @@
+#footer {
+  padding: 20px;
+  background: #1A1A1A;
+  margin-left: -80px;
+  margin-right: -80px;
+  text-align: center;
+  font-size: 21px;
+
+  @media(max-width:$tablet-landscape) {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  @media(max-width:$mobile-landscape) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  a {
+    font-size: 21px;
+    margin: 0px 6px;
+  }
+
+  p {
+    font-size:12px;
+    margin: 10px 0 0 0;
+    color: #BBB;
+    -webkit-font-smoothing: antialiased !important;
+  }
+}
